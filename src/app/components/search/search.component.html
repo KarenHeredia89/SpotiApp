@@ -1,1 +1,9 @@
-<p>search works!</p>
+
+<div class="row mb-5 mt-5">
+    <div class="col">
+        <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar Artista">
+    </div>
+</div>
+<app-loader *ngIf="loader"></app-loader>
+
+<app-cards *ngIf="!loader" [items]="artistas"></app-cards>

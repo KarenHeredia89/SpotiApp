@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 .navbar-nav .nav-link.active, 
 .navbar-nav .show>.nav-link,
-.nav-link, .navbar-brand{
+.nav-link, .navbar-brand,
+ table td,
+ table tr {
     color: white;
 }
 
@@ -20,7 +22,9 @@ hr {
 
 .img-circle {
     border-radius: 100%;
-    width: 150px;
+    width: 100px;
+    height: 100px;
+    
 }
 
 .card-title,

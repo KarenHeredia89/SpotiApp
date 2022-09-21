@@ -8,11 +8,18 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 
-//Importar Rutas
+
+//Import Routes
 import { ROUTES } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
+
+//Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { ComponentsComponent } from './components/components.component';
+import { LoaderComponent } from './components/shared/loader/loader.component';
 
 
 @NgModule({
@@ -21,7 +28,11 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    CardsComponent,
+    ComponentsComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

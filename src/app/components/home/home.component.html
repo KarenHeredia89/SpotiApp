@@ -1,10 +1,2 @@
-<div class="row">
-    <div *ngFor="let cancion of nuevasCanciones" class="card" style="width: 18rem;padding: 0;
-    margin: 0 10px 10px 0px;">
-        <img [src]="cancion.images[0].url" class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-title">{{ cancion.name }}</p>
-            <span class="card-text" *ngFor="let artista of cancion.artists" class="badge text-bg-primary">{{ artista.name }}</span>
-        </div>
-    </div>
-</div>
+<app-loader *ngIf="loader"></app-loader>
+<app-cards [items]="nuevasCanciones"></app-cards>
