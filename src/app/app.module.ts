@@ -9,6 +9,7 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { LoaderComponent } from './components/shared/loader/loader.component';
 
 
 
@@ -18,8 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 //Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
-import { ComponentsComponent } from './components/components.component';
-import { LoaderComponent } from './components/shared/loader/loader.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 @NgModule({
@@ -30,8 +30,8 @@ import { LoaderComponent } from './components/shared/loader/loader.component';
     ArtistComponent,
     NavbarComponent,
     NoimagePipe,
+    DomseguroPipe,
     CardsComponent,
-    ComponentsComponent,
     LoaderComponent
   ],
   imports: [
